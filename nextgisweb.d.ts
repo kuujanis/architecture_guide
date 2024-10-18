@@ -1,4 +1,5 @@
 /* eslint-disable */
+declare module "*.module.css";
 
 declare module '@nextgisweb/pyramid/type/api' {
   import type * as ns155 from '@nextgisweb/file-upload/type/api';

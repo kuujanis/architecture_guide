@@ -9,7 +9,6 @@
         margin: 0;
         padding: 0;
       }
-
       html, body {
         height: 100%;
       }
@@ -22,12 +21,17 @@
         width: 200px;
         background-color: blueviolet;
       }
-      #map, #root{
+      #root{
         width: 100vw;
         height: 100vh;
       }
+      /* #map {
+        height: 100%;
+        width: 100vw;
+      } */
       .webmap-control-container {
-        height: 100vh
+        height: 100%;
+        width: 100%;
       }
       .export-resource-control {
         background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTMiIGhlaWdodD0iOTQiIHZpZXdCb3g9IjAgMCA5MyA5NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ3IDc1TDcwLjA5NCAzNUgyMy45MDZMNDcgNzVaTTQzIDBWMzlINTFWMEg0M1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik00LjUgNDcuNVY4OS41SDg5VjQ3LjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K');
@@ -51,57 +55,21 @@
         overflow: auto;
         max-height: 16vh;
       }
-      .check {
-        height: 50px;
-        width: 200px;
-        background-color: rgb(49, 226, 43);
-      }
-      .legend-container {
-        overflow: auto;
-        background-color: white;
-      }
-      .legend-item {
-        display: flex;
-        align-items: center;
-      }
       .legend-item img {
         margin-right: 10px;
       }
       .legend-item img.disabled {
         opacity: 0.3;
       }
-      .close-button {
-        background-image: url('./icons/pngegg.png');
-        background-size: contain;
-        border-radius: 100%;
-        width: 14px;
-        height: 14px;
 
-        position: absolute;
-        top: 5px;
-        right: 5px;
-
-        /* margin-right: 10px;
-        margin-left: auto;
-        margin-top: 5px; */
-      }
-      .legend-button {
-        background-image: url('./icons/legend.png');
-        background-size: contain;
-        width: 30px;
-        height: 30px;
-
-        background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(75, 75, 75);
-        border-radius: 5%
-      }
       .layer-section {
         padding: 10px;
         background-color: rgb(255, 255, 255);
         margin-right: 20px;
       }
       .ngw-map-container {
-        height: 100vh
+        height: 100vh;
+        border: 2px solid blue;
       }
     </style>
   </head>

@@ -1,0 +1,30 @@
+
+.legendContainer {
+    background-color: rgb(255, 255, 255);
+}
+
+.layerOverflow {
+    overflow: auto;
+    padding: 10px;
+}
+
+.closeButton {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    border: solid rgb(80, 80, 80) 2px;
+
+    background-image: url('../icons/pngegg.png');
+    background-size: contain;
+}
+
+.legendButton {
+    background-image: url('../icons/legend.png');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 5%
+}
