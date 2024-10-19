@@ -23,29 +23,25 @@ export const LegendPanel = ({ ngwMap }: { ngwMap: NgwMap }) => {
     return null;
   }
 
-  const LegendFull = () => {
-    return (
-      <div className={styles.legendContainer}>
-        {/* <div className={styles.closeButton}></div> */}
-        <div className={styles.layerOverflow}>
-          {layers.map(({ id, item, properties }) => {
-            return (
-              <div key={id}>
-                <Checkbox
-                  key={id}
-                  onChange={() => {
-                    properties.set('visibility', !properties.get('visibility'));
-                  }}
-                >
-                  {item.display_name} {properties.get('visibility') ? '1' : '0'}
-                </Checkbox>
-              </div>
-            );
-          })}
-        </div>
+  return (
+    <div className={styles.legendContainer}>
+      {/* <div className={styles.closeButton}></div> */}
+      <div className={styles.layerOverflow}>
+        {layers.map(({ id, item, properties }) => {
+          return (
+            <div key={id}>
+              <Checkbox
+                key={id}
+                onChange={() => {
+                  properties.set('visibility', !properties.get('visibility'));
+                }}
+              >
+                {item.display_name} {properties.get('visibility') ? '1' : '0'}
+              </Checkbox>
+            </div>
+          );
+        })}
       </div>
-    );
-  };
-
-  return <LegendFull />;
+    </div>
+  );
 };

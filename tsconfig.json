@@ -7,9 +7,10 @@
     "skipLibCheck": true,
     "moduleResolution": "Node",
     "sourceMap": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": "./",
     "jsx": "react-jsx"
   },
-  "include": ["nextgisweb.d.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "include": ["nextgisweb.d.ts", "global.d.ts", "src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "dist"]
 }
